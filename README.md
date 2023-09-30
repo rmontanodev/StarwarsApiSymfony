@@ -16,7 +16,7 @@ cd StarwarsApiSymfony
 composer install
 
 ### Cree el archivo .env.local para configurar las variables de entorno locales. Puede copiar el archivo .env y personalizarlo según sea necesario.
-cp .env .env.local
+cp .env .env.example
 
 Configure la conexión de la base de datos en .env.local según sus necesidades.
 
