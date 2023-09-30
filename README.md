@@ -59,4 +59,4 @@ Puede acceder a la lista de personajes en la página de inicio de la aplicación
 Use la función de búsqueda para encontrar personajes por nombre.
 Haga clic en un personaje listado para acceder a la página de edición, donde puede modificar los datos del personaje y cargar una imagen personalizada.
 También puede eliminar un personaje desde la página de inicio o desde la página de edición.
-Esperamos que esta documentación te ayude a instalar y utilizar el proyecto Symfony de manera efectiva. Si tienes alguna pregunta o necesitas más detalles, no dudes en contactarnos. ¡Disfruta de tu proyecto Symfony!
+  Esperamos que esta documentación te ayude a instalar y utilizar el proyecto Symfony de manera efectiva. Si tienes alguna pregunta o necesitas más detalles, no dudes en contactarnos.
