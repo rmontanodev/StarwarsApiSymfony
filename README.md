@@ -6,35 +6,23 @@ Siga estos pasos para instalar y configurar el proyecto Symfony desde GitHub:
 
 Clone el repositorio desde GitHub:
 
-bash
-Copy code
 git clone https://github.com/rmontanodev/StarwarsApiSymfony.git
 Navegue al directorio del proyecto:
 
-bash
-Copy code
 cd StarwarsApiSymfony
 Instale las dependencias de Composer:
 
-bash
-Copy code
 composer install
 Cree el archivo .env.local para configurar las variables de entorno locales. Puede copiar el archivo .env y personalizarlo según sea necesario.
 
-bash
-Copy code
 cp .env .env.local
 Configure la conexión de la base de datos en .env.local según sus necesidades.
 
 Ejecute las migraciones de la base de datos para crear las tablas:
 
-bash
-Copy code
 php bin/console doctrine:migrations:migrate
 Inicie el servidor web local de Symfony:
 
-bash
-Copy code
 php bin/console server:start
 Acceda a su aplicación en el navegador a través de la URL proporcionada por el servidor de desarrollo Symfony (por defecto, suele ser http://localhost:8000).
 
