@@ -1,58 +1,77 @@
 # StarwarsApiSymfony
 
-## Documentación de Instalación y Uso de Proyecto Symfony
-## Instalación
-Siga estos pasos para instalar y configurar el proyecto Symfony desde GitHub:
+## Installation and Usage Documentation for Symfony Project
+## Installation
+Follow these steps to install and set up the Symfony project from GitHub:
 
-### Clone el repositorio desde GitHub:
+### Clone the repository from GitHub:
 
+```bash
 git clone https://github.com/rmontanodev/StarwarsApiSymfony.git
+```
 
-### Navegue al directorio del proyecto:
+### Navigate to the project directory:
 
+```bash
 cd StarwarsApiSymfony
+```
 
-### Instale las dependencias de Composer:
+### Install Composer dependencies:
+
+```bash
 composer install
+```
 
-### Cree el archivo .env.local para configurar las variables de entorno locales. Puede copiar el archivo .env y personalizarlo según sea necesario.
+### Create the .env.local file to configure local environment variables. You can copy the .env file and customize it as needed:
+
+```bash
 cp .env .env.example
+```
 
-Configure la conexión de la base de datos en .env.local según sus necesidades.
+Configure the database connection in .env.local according to your requirements.
 
-### Ejecute las migraciones de la base de datos para crear las tablas:
+### Execute database migrations to create tables:
 
+```bash
 php bin/console doctrine:migrations:migrate
+```
 
-### Inicie el servidor web local de Symfony:
+### Start the local Symfony web server:
 
+```bash
 php bin/console server:start
-Acceda a su aplicación en el navegador a través de la URL proporcionada por el servidor de desarrollo Symfony (por defecto, suele ser http://localhost:8000).
+```
 
-## Entidades
+Access your application in the browser via the URL provided by the Symfony development server (usually http://localhost:8000 by default).
+
+## Entities
 ### Character
-La entidad Character representa a un personaje en la base de datos. Tiene las siguientes propiedades:
+The `Character` entity represents a character in the database. It has the following properties:
 
-#### id: Identificador único del personaje.
-#### name: Nombre del personaje.
-#### mass: Masa del personaje.
-#### height: Altura del personaje.
-#### gender: Género del personaje.
-#### picture: Imagen del personaje (personalizada).
+#### id: Unique identifier of the character.
+#### name: Name of the character.
+#### mass: Character's mass.
+#### height: Character's height.
+#### gender: Character's gender.
+#### picture: Character's image (customized).
 
 ### Movie
-#### La entidad Movie representa una película en la base de datos. Tiene las siguientes propiedades:
+The `Movie` entity represents a movie in the database. It has the following properties:
 
-#### id: Identificador único de la película.
-#### name: Nombre de la película.
+#### id: Unique identifier of the movie.
+#### name: Name of the movie.
 
 ### MovieCharacter
-La entidad MovieCharacter representa la relación entre una película y un personaje. Tiene las siguientes propiedades:
+The `MovieCharacter` entity represents the relationship between a movie and a character. It has the following properties:
 
-#### movie_id: Identificador de la película relacionada.
-#### character_id: Identificador del personaje relacionado.
-#### Comando starwars:import
+#### movie_id: Identifier of the related movie.
+#### character_id: Identifier of the related character.
 
-### Puede utilizar el siguiente comando para descargar datos desde la API de Star Wars y llenar la base de datos con personajes y películas:
-## php bin/console starwars:import
-Este comando descargará datos de la API y los almacenará en las tablas Character y Movie de la base de datos. Asegúrese de que la configuración de la API de Star Wars esté correctamente definida en el código del comando antes de ejecutarlo.
+### starwars:import Command
+You can use the following command to download data from the Star Wars API and populate the database with characters and movies:
+
+```bash
+php bin/console starwars:import
+```
+
+This command will download data from the Star Wars API and store it in the `Character` and `Movie` tables of the database. Ensure that the Star Wars API configuration is correctly defined in the command's code before running it.
