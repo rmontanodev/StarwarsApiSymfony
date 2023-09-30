@@ -31,37 +31,34 @@ Acceda a su aplicación en el navegador a través de la URL proporcionada por el
 
 ## Entidades
 ### Character
-## La entidad Character representa a un personaje en la base de datos. Tiene las siguientes propiedades:
+La entidad Character representa a un personaje en la base de datos. Tiene las siguientes propiedades:
 
-id: Identificador único del personaje.
-name: Nombre del personaje.
-mass: Masa del personaje.
-height: Altura del personaje.
-gender: Género del personaje.
-picture: Imagen del personaje (personalizada).
+#### id: Identificador único del personaje.
+#### name: Nombre del personaje.
+#### mass: Masa del personaje.
+#### height: Altura del personaje.
+#### gender: Género del personaje.
+#### picture: Imagen del personaje (personalizada).
 
 ### Movie
-## La entidad Movie representa una película en la base de datos. Tiene las siguientes propiedades:
+#### La entidad Movie representa una película en la base de datos. Tiene las siguientes propiedades:
 
-id: Identificador único de la película.
-name: Nombre de la película.
+#### id: Identificador único de la película.
+#### name: Nombre de la película.
 
 ### MovieCharacter
 La entidad MovieCharacter representa la relación entre una película y un personaje. Tiene las siguientes propiedades:
 
-movie_id: Identificador de la película relacionada.
-character_id: Identificador del personaje relacionado.
-Comando starwars:import
+#### movie_id: Identificador de la película relacionada.
+#### character_id: Identificador del personaje relacionado.
+#### Comando starwars:import
 
-## Puede utilizar el siguiente comando para descargar datos desde la API de Star Wars y llenar la base de datos con personajes y películas:
-
-bash
-Copy code
+### Puede utilizar el siguiente comando para descargar datos desde la API de Star Wars y llenar la base de datos con personajes y películas:
 ## php bin/console starwars:import
 Este comando descargará datos de la API y los almacenará en las tablas Character y Movie de la base de datos. Asegúrese de que la configuración de la API de Star Wars esté correctamente definida en el código del comando antes de ejecutarlo.
 
 ##  TODO
-Puede acceder a la lista de personajes en la página de inicio de la aplicación.
-Use la función de búsqueda para encontrar personajes por nombre.
-Haga clic en un personaje listado para acceder a la página de edición, donde puede modificar los datos del personaje y cargar una imagen personalizada.
-También puede eliminar un personaje desde la página de inicio o desde la página de edición.
+#### acceder a la lista de personajes en la página de inicio de la aplicación.
+#### Función de búsqueda para encontrar personajes por nombre.
+#### Haga clic en un personaje listado para acceder a la página de edición, donde puede modificar los datos del personaje y cargar una imagen personalizada.
+#### Eliminar un personaje desde la página de inicio o desde la página de edición.
